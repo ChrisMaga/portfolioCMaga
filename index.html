@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap"
         rel="stylesheet">
+    <!-- icon -->
     <link rel="shortcut icon" href="./src/image/Avatar.png" type="image/x-icon">
+    <!-- styles -->
     <link rel="stylesheet" href="./src/styles/root.css">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <title>Christiane Magalhaes | Portfolio</title>
@@ -17,13 +20,51 @@
 
 <body>
     <header class="header">
+        <nav class="header-nav">
+            <ul class="menu menu-principal">
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active">
+                        <i class="menu-icon">
+                            <span class="menu-text">Home</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                        <i class="menu-icon">
+                            <span class="menu-text">Sobre</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projetos" class="menu-link">
+                        <i class="menu-icon">
+                            <span class="menu-text">Projetos</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link">
+                        <i class="menu-icon">
+                            <span class="menu-text">Contato</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
         <div class="header-brand">
             <img class="brand-logo" src="" alt="">
         </div>
-
-        <i id="toggle-theme" class="bi bi-sun"></i>
+        <div class="header-toggle">
+            <i id="toggle-theme" class="bi bi-sun"></i>
+        </div>
     </header>
-    <nav>
+
+    <!-- versão mobile -->
+    <nav class="nav-mobile">
         <ul class="menu menu-mobile">
             <li class="menu-item">
                 <a href="#home" class="menu-link active">
@@ -56,7 +97,68 @@
         </ul>
     </nav>
 
+    <!-- sections -->
+    <main>
+        <div class="main-content1">
+            <h1><strong>Soluções Criativas &</strong> Desenvolvimento Front-End</h1>
+            <p>Nome, local e profissão</p>
+            <ul class="menu menu-social">
+                <li>
+                    <a href="#" class="menu-link">
+                        <i class="menu-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link">
+                        <i class="menu-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link">
+                        <i class="menu-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn-primary">
+                <span>Ver Projetos</span>
+                <i></i>
+            </button>
+            <div class="main-content2"><iframe src="" title="" frameborder="0"></iframe></div>
+        </div>
+    </main>
+
+    <section class="skills">
+        <h2></h2>
+        <ul class="skills-list">
+            <li class="skills-item">
+                <img src="" alt="" class="skills-logo">
+            </li>
+            <li class="skills-item">
+                <img src="" alt="" class="skills-logo">
+            </li>
+            <li class="skills-item">
+                <img src="" alt="" class="skills-logo">
+            </li>
+            <li class="skills-item">
+                <img src="" alt="" class="skills-logo">
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+    <!-- rodapé -->
+    <footer>
+        <p>
+            2025. Todos os Direitos Reservados. Christiane Magalhães. Desenvolvido por <a href="#">CM</a>.
+        </p>
+    </footer>
+
+    <script src="src/script/scripts.js"></script>
 
 </body>
+
 
 </html>
