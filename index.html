@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio da desenvolvedora front-end Christiane Magalhães para compartilhar projetos e habilidades desenvolvidas.">
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +14,8 @@
         rel="stylesheet">
     <!-- icon -->
     <link rel="shortcut icon" href="./src/image/Avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- styles -->
-    <link rel="stylesheet" href="./src/styles/root.css">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <title>Christiane Magalhaes | Portfolio</title>
 </head>
@@ -23,29 +25,30 @@
         <nav class="header-nav">
             <ul class="menu menu-principal">
                 <li class="menu-item">
-                    <a href="#home" class="menu-link active">
-                        <i class="menu-icon">
+                    <a href="/index.html" class="menu-link">
+                        <i class="menu-icon bi bi-house-door">
                             <span class="menu-text">Home</span>
                         </i>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#sobre" class="menu-link">
-                        <i class="menu-icon">
-                            <span class="menu-text">Sobre</span>
-                        </i>
-                    </a>
-                </li>
-                <li class="menu-item">
                     <a href="#projetos" class="menu-link">
-                        <i class="menu-icon">
+                        <i class="menu-icon bi bi-window-stack">
                             <span class="menu-text">Projetos</span>
                         </i>
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                        <i class="menu-icon bi bi-person">
+                            <span class="menu-text">Sobre</span>
+                        </i>
+                    </a>
+                </li>
+
+                <li class="menu-item">
                     <a href="#contato" class="menu-link">
-                        <i class="menu-icon">
+                        <i class="menu-icon bi bi-envelope">
                             <span class="menu-text">Contato</span>
                         </i>
                     </a>
@@ -53,13 +56,12 @@
             </ul>
         </nav>
 
-
-
         <div class="header-brand">
-            <img class="brand-logo" src="" alt="">
+            <a href="#home">
+                <img class="brand-logo" src="src/image/Logo.png" alt="Logo CM"></a>
         </div>
         <div class="header-toggle">
-            <i id="toggle-theme" class="bi bi-sun"></i>
+            <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
     </header>
 
@@ -68,28 +70,29 @@
         <ul class="menu menu-mobile">
             <li class="menu-item">
                 <a href="#home" class="menu-link active">
-                    <i class="menu-icon">
+                    <i class="menu-icon bi bi-house-door">
                         <span class="menu-text">Home</span>
                     </i>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="#sobre" class="menu-link">
-                    <i class="menu-icon">
-                        <span class="menu-text">Sobre</span>
-                    </i>
-                </a>
-            </li>
-            <li class="menu-item">
                 <a href="#projetos" class="menu-link">
-                    <i class="menu-icon">
+                    <i class="menu-icon bi-window-stack">
                         <span class="menu-text">Projetos</span>
                     </i>
                 </a>
             </li>
             <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icon bi bi-person">
+                        <span class="menu-text">Sobre</span>
+                    </i>
+                </a>
+            </li>
+
+            <li class="menu-item">
                 <a href="#contato" class="menu-link">
-                    <i class="menu-icon">
+                    <i class="menu-icon bi bi-envelope">
                         <span class="menu-text">Contato</span>
                     </i>
                 </a>
@@ -98,67 +101,301 @@
     </nav>
 
     <!-- sections -->
-    <main>
+    <main id="home">
         <div class="main-content1">
             <h1><strong>Soluções Criativas &</strong> Desenvolvimento Front-End</h1>
             <p>Nome, local e profissão</p>
             <ul class="menu menu-social">
                 <li>
-                    <a href="#" class="menu-link">
-                        <i class="menu-icon"></i>
+                    <a href="https://github.com/ChrisMaga" class="menu-link" target="_blank">
+                        <i class="menu-icon bi bi-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">
-                        <i class="menu-icon"></i>
+                    <a href="https://www.linkedin.com/in/christiane-magalhaes/" class="menu-link" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">
-                        <i class="menu-icon"></i>
+                    <a href="https://www.instagram.com/chrismagalhaes_dev/" class="menu-link" target="_blank">
+                        <i class="menu-icon bi bi-instagram"></i>
                     </a>
                 </li>
             </ul>
-            <button class="btn btn-primary">
-                <span>Ver Projetos</span>
-                <i></i>
-            </button>
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
             <div class="main-content2"><iframe src="" title="" frameborder="0"></iframe></div>
         </div>
     </main>
 
-    <section class="skills">
-        <h2></h2>
-        <ul class="skills-list">
-            <li class="skills-item">
-                <img src="" alt="" class="skills-logo">
+    <section class="technologies">
+        <h2>Conhecimento nas principais tecnologias do mercado</h2>
+        <ul class="technologies-list">
+            <li class="technologies-item">
+                <img src="" alt="" class="technologies-logo">
             </li>
-            <li class="skills-item">
-                <img src="" alt="" class="skills-logo">
+            <li class="technologies-item">
+                <img src="" alt="" class="technologies-logo">
             </li>
-            <li class="skills-item">
-                <img src="" alt="" class="skills-logo">
+            <li class="technologies-item">
+                <img src="" alt="" class="technologies-logo">
             </li>
-            <li class="skills-item">
-                <img src="" alt="" class="skills-logo">
+            <li class="technologies-item">
+                <img src="" alt="" class="technologies-logo">
             </li>
         </ul>
     </section>
 
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="projects-card">
+                <img src="" alt="" class="card-cover">
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <ul class="card-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="technologies-list">
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn ">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-card card-reverse">
+                <img src="" alt="" class="card-cover">
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <ul class="card-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="technologies-list">
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn ">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-card">
+                <img src="" alt="" class="card-cover">
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <ul class="card-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="technologies-list">
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                        <li class="technologies-item">
+                            <img src="" alt="" class="technologies-logo">
+                        </li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn ">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/ChrisMaga">
+                <button class="btn btn-primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
 
+    <section id="sobre" class="about">
+        <div class="about-content1">
+            <img src="" alt="" class="about-photo">
+            <div class="about-description">
+                <h2>Sobre mim</h2>
+                <p></p>
+                <div class="about-icons">
+                    <i class="bi bi-translate"></i>
+                    <span>Inglês: Básico</span>
+                </div>
 
+                <div class="description-buttons">
+                    <a href="" target="_blank">
+                        <button class="btn btn-primary">
+                            <span>Conecte-se Comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="about-content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+                    <h4>Análise e Desenvolvimento de Sistemas</h4>
+                    <span>Abr 2023 - Atualmente</span>
+                    <div class="about-icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Universidade Senac SP</span>
+                    </div>
+                    <div class="about-icons">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Tecnólogo</span>
+                    </div>
+                </div>
+                <div class="row2">
+                    <h3>Experiências</h3>
+                    <h4>Atuação</h4>
+                    <span>Local e periodo</span>
+                    <span>pequena descrição do que fez</span>
+                    <ul class="about-list">
+                        <li class="about-item"></li>
+                        <li class="about-item"></li>
+                        <li class="about-item"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                    <div class="accordion-item active">
+                        <button class="accordion-header start">
+                            <span>Nome do curso</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Digital Innovation One. Mes Ano. Horas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Nome do curso</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Digital Innovation One. Mes Ano. Horas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header end">
+                            <span>Nome do curso</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion-body end">
+                            <p>Digital Innovation One. Mes Ano. Horas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços e novas conexões. COntate-me via e-mail e conecte-se comigo através das minhas
+            redes sociais.</p>
+        <ul class="menu menu-social">
+            <li>
+                <a href="https://github.com/ChrisMaga" class="menu-link" target="_blank">
+                    <i class="menu-icon bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/christiane-magalhaes/" class="menu-link" target="_blank">
+                    <i class="menu-icon bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/chrismagalhaes_dev/" class="menu-link" target="_blank">
+                    <i class="menu-icon bi bi-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+        <a href="mailto:christianem.arcari@gmail.com">
+            <button class="btn btn--primary">
+                <span class="email">christianem.arcari@gmail.com</span>
+            </button>
+        </a>
+    </section>
 
     <!-- rodapé -->
     <footer>
         <p>
-            2025. Todos os Direitos Reservados. Christiane Magalhães. Desenvolvido por <a href="#">CM</a>.
+            © 2025. Todos os Direitos Reservados. Christiane Magalhães. Desenvolvido por <a
+                href="https://github.com/ChrisMaga">CM</a>.
         </p>
     </footer>
 
     <script src="src/script/scripts.js"></script>
-
 </body>
-
 
 </html>
