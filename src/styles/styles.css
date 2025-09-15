@@ -1,0 +1,102 @@
+:root {
+  --primary-color: ;
+
+  --primary-bg-color: ;
+  --secundary-bg-color: ;
+  --border-color: ;
+
+  --title-color: ;
+  --link-color: ;
+  --icon-color: ;
+}
+
+body {
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.header-brand .brand-logo{
+width: 3.25rem;
+height: 3.25rem;
+}
+
+#toggle-theme {
+    font-size: 1.5rem;
+    color: rgb(169, 48, 217);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #fff ;
+}
+
+.menu-mobile .menu-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon, 
+.menu-link.active .menu-text {
+color: #fff;
+font-weight: 600;
+}
+
+.menu-icon, .menu-text {
+    color:#a1a1a1;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+}
