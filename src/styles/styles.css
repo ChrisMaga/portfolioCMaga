@@ -34,6 +34,7 @@ html[data-theme="light"] .brand-logo {
 html[data-theme="light"] .technologies-logo {
   filter: invert(80%);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +84,8 @@ h2 {
   font-size: 2rem;
   text-align: center;
   letter-spacing: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -137,7 +140,7 @@ p {
 }
 
 /* botão do tema */
-#toggle-theme {
+#toggleTheme {
   font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
@@ -258,7 +261,7 @@ main {
 .main-content1 {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .main-content2 iframe {
@@ -324,6 +327,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .card-cover {
@@ -338,7 +343,9 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
 }
 
 .card-description {
@@ -671,6 +678,11 @@ footer p {
     font-size: 1.15rem;
   }
 
+  .projects-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .card-buttons .btn,
   .description-buttons .btn {
     width: auto;
@@ -700,5 +712,10 @@ footer p {
   .projects,
   .about {
     padding: 10rem 15rem 4rem;
+  }
+
+  .projects-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
