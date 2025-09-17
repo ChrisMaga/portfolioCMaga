@@ -210,6 +210,9 @@ p {
 .menu-social {
   gap: 1rem;
 }
+.menu-text{
+  font-size: .8rem;
+}
 
 .btn {
   display: flex;
