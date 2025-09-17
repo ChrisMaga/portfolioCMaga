@@ -1,4 +1,4 @@
-const toggleTheme = document.getElementById("toggleTheme");
+const toggleTheme = document.getElementById("toggleThemeC");
 const rootHtml = document.documentElement;
 
 function changeTheme() {

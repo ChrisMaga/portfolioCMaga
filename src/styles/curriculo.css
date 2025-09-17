@@ -320,7 +320,7 @@ main,
   width: auto;
 }
 
-.contact .email {
+.email {
   text-transform: lowercase;
 } */
 
@@ -479,18 +479,42 @@ footer p {
     font-size: 3.25rem;
   }
 
-  .header {
+  main {
+   padding: 15rem 6rem 2rem 6rem;
+  }
+  .header-c {
     padding: 1rem 15rem;
   }
-  main {
-    padding: 15rem 6rem 2rem 6rem;
-  }
-  .technologies {
-    padding: 10rem 15rem 4rem;
+
+  .header-toggle {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .projects-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+  .main-content1-c {
+    margin: 5rem;
+    margin-bottom: 0rem;
   }
+
+  .content-info {
+    gap: 3rem;
+  }
+
+  .email {
+    margin: 0.6rem;
+  }
+
+  .menu-social {
+    gap: 3rem;
+  }
+
+  .content-description {
+    margin-top: 3rem;
+  }
+
+  .colege,
+  .technologies-c {
+    padding-left: 11rem;
+  }
+
 }
